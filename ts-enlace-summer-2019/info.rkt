@@ -4,6 +4,6 @@
 
 (define deps '(
   "https://github.com/thoughtstem/TS-GE-Katas.git?path=ts-kata-util"
-  "https://github.com/thoughtstem/TS-GE-Languages.git?path=data-sci"
+  "https://github.com/thoughtstem/TS-MISC-Languages.git?path=data-sci"
   ))
 
