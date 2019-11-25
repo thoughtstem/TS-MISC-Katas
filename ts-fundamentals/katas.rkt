@@ -1,7 +1,6 @@
 #lang racket
 
 (provide katas
-         code-of-awesomeness
          code-values-all
          image->code-katas
          hello-world
@@ -10,22 +9,6 @@
 (require ts-kata-util/katas/main
          "./katas/image-to-code.rkt"
          "./katas/simple-pictures.rkt")
-
-(define-kata code-of-awesomeness
-  (recite-codes
-   #:in "Code of Awesomeness"
-   #:codes (list "1. OVERCOME THE UNKNOWN"
-                 "2. BE A BUG HUNTER"
-                 "3. ENERGIZE THE TEAM")
-   #:responses (list (list "- A) To boldly go where no one's gone before."
-                           "- B) To infinity and beyond!"
-                           "- C) CHARGE!")
-                     (list "A) Bug found? Don’t frown!"
-                           "B) SMUSH!"
-                           "C) Gotta catch 'em all!")
-                     (list "- A) Coders Assemble!"
-                           "- B) Teamwork makes the dream work."
-                           "- C) Be the lightning!"))))
 
 (define-kata code-of-awesomeness-1
   (recite
@@ -91,16 +74,12 @@
 (define-kata hello-world
   (first (kata-collection-katas fundamentals)))
 
-(define-kata-collection unplugged
-  core-values)
-
 (define-kata-collection code-values-all
   code-of-awesomeness-1
   code-of-awesomeness-2
   code-of-awesomeness-3)
 
 (define-kata-collection katas
-  unplugged
   hello-world
   fundamentals-shapes
   image->code-katas
