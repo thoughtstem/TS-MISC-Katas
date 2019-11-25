@@ -30,7 +30,7 @@
 
 
 (define-kata-collection day-1-katas
-  core-values
+  code-values-all
   hello-world
   fundamentals-shapes)
 

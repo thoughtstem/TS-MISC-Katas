@@ -38,7 +38,7 @@ Memorizing and reciting these values helps keep students focused on the two most
 they are learning: their own growing abilities; and their membership
 within a society of other learners.
 
-@(render core-values)
+@(render code-values-all)
 
 @section{Writing Skills}
 
