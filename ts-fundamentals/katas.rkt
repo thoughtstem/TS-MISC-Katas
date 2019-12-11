@@ -1,7 +1,6 @@
 #lang racket
 
 (provide katas
-         core-values
          code-values-all
          image->code-katas
          hello-world
@@ -11,39 +10,21 @@
          "./katas/image-to-code.rkt"
          "./katas/simple-pictures.rkt")
 
-(define-kata core-values
-  (recite-codes
-   #:in "Code of Awesomeness"
-   #:codes (list "1. CONQUER THE UNKNOWN"
-                 "2. BE A BUG HUNTER"
-                 "3. ENERGIZE THE TEAM")
-   #:responses (list (list "- A) To boldly go where no one has gone before."
-                           "- B) To infinity and beyond!"
-                           "- C) CHARGE!"
-                           "- D) something else?")
-                     (list "A) Bug found? Don’t frown!"
-                           "B) SMUSH!"
-                           "C) Gotta catch 'em all!"
-                           "D) ???")
-                     (list "- A) Coders Assemble!"
-                           "- B) Teamwork makes the dream work."
-                           "- C) Be the lightning!"))))
-
-(define-kata code-value-1
+(define-kata code-of-awesomeness-1
   (recite
-   #:in "CONQUER THE UNKNOWN"
-   #:out (list "A) To boldly go where no one has gone before."
+   #:in "OVERCOME THE UNKNOWN"
+   #:out (list "A) To boldly go where no one's gone before."
                "B) To infinity and beyond!"
                "C) CHARGE!")))
 
-(define-kata code-value-2
+(define-kata code-of-awesomeness-2
   (recite
    #:in "BE A BUG HUNTER"
    #:out (list "A) Bug found? Don’t frown!"
                "B) SMUSH!"
                "C) Gotta catch 'em all!")))
 
-(define-kata code-value-3
+(define-kata code-of-awesomeness-3
   (recite
    #:in "ENERGIZE THE TEAM"
    #:out (list "A) Coders Assemble!"
@@ -93,16 +74,12 @@
 (define-kata hello-world
   (first (kata-collection-katas fundamentals)))
 
-(define-kata-collection unplugged
-  core-values)
-
 (define-kata-collection code-values-all
-  code-value-1
-  code-value-2
-  code-value-3)
+  code-of-awesomeness-1
+  code-of-awesomeness-2
+  code-of-awesomeness-3)
 
 (define-kata-collection katas
-  unplugged
   hello-world
   fundamentals-shapes
   image->code-katas
